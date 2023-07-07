@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link
+      rel="shortcut icon"
+      href="./img/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      sizes="72x72"
+      href="./img/favicon/favicon-72x72.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./img/favicon/favicon-72x72.png"
+    />
+    <link
+      rel="stylesheet"
+      href="./libs/fontawesomelib/fontawesome/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="./js/app.min.js" defer></script>
+    <title>PC-building</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__body">
+          <div class="header__left-side">
+            <div class="custom-logo-link">
+              <img src="./img/src/logo.png" alt="website-logo" />
+            </div>
+            <nav class="header__left-side-menu menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-item-link" href="#header">Главная</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-item-link" href="#courses">Курсы</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-item-link" href="#study">Расписание</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-item-link" href="#teachers"
+                    >Преподаватели</a
+                  >
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-item-link" href="#footer">Рассылка</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-item-link" href="#">Контакты</a>
+                  <ul class="sub-menu__contacts">
+                    <li class="sub-menu__contacts-item">
+                      <a
+                        class="sub-menu__contacts-item-link"
+                        href="tel:+71234567890"
+                        ><i class="fa-solid fa-phone fa-lg"></i>+7 (123)
+                        456-78-90</a
+                      >
+                    </li>
+                    <li class="sub-menu__contacts-item">
+                      <a
+                        class="sub-menu__contacts-item-link"
+                        href="tel:+70987654321"
+                        ><i class="fa-solid fa-phone fa-lg"></i>+7 (098)
+                        765-43-21</a
+                      >
+                    </li>
+                    <li class="sub-menu__contacts-item">
+                      <a
+                        class="sub-menu__contacts-item-link"
+                        href="mailto:dmitriyivanov@urmail.ru"
+                        ><i class="fa-regular fa-envelope fa-lg"></i
+                        >dmitriyivanov@urmail.ru</a
+                      >
+                    </li>
+                    <li class="sub-menu__contacts-item">
+                      <a
+                        class="sub-menu__contacts-item-link"
+                        href="mailto:dmitriyivanov@urmail.com"
+                        ><i class="fa-regular fa-envelope fa-lg"></i
+                        >dmitriyivanov@urmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__right-side">
+            <a
+              data-da=".menu__list,768,first"
+              class="header__right-side-button button button--login"
+              href="#"
+            >
+              Зайти в кабинет
+            </a>
+            <div class="header__right-side-burger"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="site-intro" id="header">
+      <img
+        class="site-intro__background-image"
+        src="./img/src/main-screen__bgc.jpg"
+        alt="background-image"
+      />
+      <div class="site-intro__wrapper">
+        <div class="site-intro__body">
+          <div class="site-intro__header">
+            <h1 class="site-intro__title">
+              Первый курс <br />
+              по компьютерной сборке
+            </h1>
+            <div class="site-intro__time-items">
+              <div class="site-intro__time-item">
+                <p class="site-intro__time-item-name">
+                  14<br /><span> Дней </span>
+                </p>
+              </div>
+              <div class="site-intro__time-item">
+                <p class="site-intro__time-item-name">
+                  18<br /><span> Часов </span>
+                </p>
+              </div>
+              <div class="site-intro__time-item">
+                <p class="site-intro__time-item-name">
+                  30<br /><span> Минут </span>
+                </p>
+              </div>
+              <div class="site-intro__time-item">
+                <p class="site-intro__time-item-name">
+                  59<br /><span> Секунд </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="site-intro__stat-wrapper">
+            <div class="site-intro__stat-body stat-body">
+              <a href="#" class="stat-body__button button button--order">
+                Заказать курс
+              </a>
+              <div class="stat-body__participants">
+                <div class="stat-body__participants-all">
+                  <p class="stat-body__participants-desc">Участников всего:</p>
+                  <span> 200 </span>
+                </div>
+                <div class="stat-body__participants-finished">
+                  <p class="stat-body__participants-desc">
+                    Успешно закончили курс:
+                  </p>
+                  <span> 190 </span>
+                </div>
+              </div>
+              <div class="stat-body__salary salary">
+                <div class="salary__earned">
+                  <p class="salary__earned-desc">Заработано участниками:</p>
+                  <span> 600 000&#8381; </span>
+                </div>
+                <div class="salary__line-progress line-progress">
+                  <div class="line-progress__behind-line"></div>
+                </div>
+                <div class="salary__goalToEarn">
+                  <div class="salary__goalToEarn-start">0</div>
+                  <div class="salary__goalToEarn-target">1 000 000&#8381;</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <main>
+        <section class="about-us">
+          <div class="about-us__wrapper">
+            <div class="about-us__body">
+              <div class="about-us__content">
+                <img
+                  class="about-us__content-image"
+                  src="./img/src/about_img.png"
+                  alt="pc-img"
+                />
+                <div class="about-us__content-text">
+                  <h2 class="about-us__content-title">Чем мы занимаемся?</h2>
+                  <p class="about-us__content-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Eget neque, dignissim et feugiat elit augue in suspendisse
+                    egestas. Dictum vestibulum mi et sed nunc, orci fermentum
+                    vestibulum, morbi. Et neque, adipiscing sapien sem senectus
+                    praesent aenean consequat. Aenean facilisi turpis aliquet
+                    fringilla. Nunc sem felis sed interdum feugiat mattis elit,
+                    sollicitudin. Quam pharetra rhoncus risus, cursus id
+                    elementum aliquet. Nullam turpis arcu malesuada arcu
+                    interdum placerat nisi, lobortis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="start" id="courses">
+          <div class="start__wrapper">
+            <div class="start__body">
+              <div class="start__header-block">
+                <div class="start__header section-header">
+                  <div class="section-header__logo section-logo">
+                    <img
+                      class="section-logo__image section-image"
+                      src="./img/src/EllipseResult.png"
+                      alt="section-logo"
+                    />
+                  </div>
+                  <h2 class="section-header__name section-name">
+                    Быстрый старт
+                  </h2>
+                </div>
+                <div class="start__section-description section-description">
+                  <p>
+                    Больше 90% учеников прошли полный курс и смогли собрать свой
+                    первый компьютер
+                  </p>
+                </div>
+              </div>
+              <div class="start__progress-items progress-items">
+                <div class="progress-items__item">
+                  <h3 class="progress-items__item-header">100%</h3>
+                  <div class="progress-items__item-view"></div>
+                  <p class="progress-items__item-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Netus eget velit quisque accumsan amet tortor. Velit,
+                    volutpat egestas fringilla mi porttitor tempus. Placerat
+                    dui.
+                  </p>
+                </div>
+                <div class="progress-items__item">
+                  <h3 class="progress-items__item-header">75%</h3>
+                  <div class="progress-items__item-view"></div>
+                  <p class="progress-items__item-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Netus eget velit quisque accumsan amet tortor. Velit,
+                    volutpat egestas fringilla mi porttitor tempus. Placerat
+                    dui.
+                  </p>
+                </div>
+                <div class="progress-items__item">
+                  <h3 class="progress-items__item-header">50%</h3>
+                  <div class="progress-items__item-view"></div>
+                  <p class="progress-items__item-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Netus eget velit quisque accumsan amet tortor. Velit,
+                    volutpat egestas fringilla mi porttitor tempus. Placerat
+                    dui.
+                  </p>
+                </div>
+                <div class="progress-items__item">
+                  <h3 class="progress-items__item-header">Итог</h3>
+                  <div class="progress-items__item-view"></div>
+                  <p class="progress-items__item-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Netus eget velit quisque accumsan amet tortor. Velit,
+                    volutpat egestas fringilla mi porttitor tempus. Placerat
+                    dui.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="profession">
+          <div class="profession__wrapper">
+            <div class="profession__body">
+              <h2
+                class="profession__section-name section-name section-name--center"
+              >
+                Получите профессию прямо сейчас
+              </h2>
+              <div class="profession__items">
+                <div class="profession__item">
+                  <img
+                    class="profession__item-image"
+                    src="./img/src/pc.png"
+                    alt="advantage-image"
+                  />
+                  <h3 class="profession__item-header">
+                    Только практические навыки в работе
+                  </h3>
+                  <p class="profession__item-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Netus eget velit quisque accumsan amet tortor. Velit,
+                    volutpat egestas fringilla mi porttitor tempus. Placerat
+                    dui.
+                  </p>
+                </div>
+
+                <div class="profession__item">
+                  <img
+                    class="profession__item-image"
+                    src="./img/src/flash.png"
+                    alt="advantage-image"
+                  />
+                  <h3 class="profession__item-header">
+                    Работа на самом современном оборудовании
+                  </h3>
+                  <p class="profession__item-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Netus eget velit quisque accumsan amet tortor. Velit,
+                    volutpat egestas fringilla mi porttitor tempus. Placerat
+                    dui.
+                  </p>
+                </div>
+
+                <div class="profession__item">
+                  <img
+                    class="profession__item-image"
+                    src="./img/src/charger.png"
+                    alt="advantage-image"
+                  />
+                  <h3 class="profession__item-header">
+                    Сертификация по окончании обучения
+                  </h3>
+                  <p class="profession__item-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Netus eget velit quisque accumsan amet tortor. Velit,
+                    volutpat egestas fringilla mi porttitor tempus. Placerat
+                    dui.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="program-study" id="study">
+          <div class="program-study__wrapper">
+            <div class="program-study__body">
+              <div class="program-study__header-block">
+                <div class="program-study__section-logo section-logo">
+                  <img
+                    class="program-study__section-image section-image"
+                    src="./img/src/EllipseStudy.png"
+                    alt="section-logo"
+                  />
+                </div>
+                <h2
+                  class="program-study__section-name section-name section-name--center"
+                >
+                  Программа обучения
+                </h2>
+                <p
+                  class="program-study__section-description section-description section-description--center"
+                >
+                  Больше 90% учеников прошли полный курс и смогли собрать свой
+                  первый компьютер
+                </p>
+              </div>
+              <div class="program-study__items">
+                <div class="program-study__item">
+                  <span class="program-study__item-week"> Неделя №1 </span>
+                  <br />
+                  <br />
+                  Красивая часть курса, которая помогает в успехе
+                </div>
+                <div class="program-study__item">
+                  <span class="program-study__item-week"> Неделя №2 </span>
+                  <br />
+                  <br />
+                  Красивая часть курса, которая помогает в успехе
+                </div>
+                <div class="program-study__item">
+                  <span class="program-study__item-week"> Неделя №3 </span>
+                  <br />
+                  <br />
+                  Красивая часть курса, которая помогает в успехе
+                </div>
+                <div class="program-study__item">
+                  <span class="program-study__item-week"> Неделя №4 </span>
+                  <br />
+                  <br />
+                  Красивая часть курса, которая помогает в успехе
+                </div>
+                <div class="program-study__item">
+                  <span class="program-study__item-week"> Неделя №5 </span>
+                  <br />
+                  <br />
+                  Красивая часть курса, которая помогает в успехе
+                </div>
+                <div class="program-study__item">
+                  <span class="program-study__item-week"> Неделя №6 </span>
+                  <br />
+                  <br />
+                  Красивая часть курса, которая помогает в успехе
+                </div>
+                <div class="program-study__item">
+                  <span class="program-study__item-week"> Неделя №7 </span>
+                  <br />
+                  <br />
+                  Красивая часть курса, которая помогает в успехе
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="teachers" id="teachers">
+          <div class="teachers__wrapper">
+            <div class="teachers__body">
+              <div class="teachers__header section-header _header-column">
+                <div class="section-header__logo section-logo">
+                  <img
+                    class="section-logo__image section-image"
+                    src="./img/src/EllipseTeachers.png"
+                    alt="section-logo"
+                  />
+                </div>
+                <h2 class="section-header__name section-name">
+                  Ваши преподаватели
+                </h2>
+              </div>
+              <div class="teachers__items">
+                <div class="teachers__item">
+                  <img
+                    class="teachers__item-image"
+                    src="./img/src/teacher1.png"
+                    alt="teacher-image"
+                  />
+                  <h3 class="teachers__item-name">Дмитрий Иванов</h3>
+                  <p class="teachers__item-position">
+                    Специалист по видеокартам
+                  </p>
+                  <a
+                    class="teachers__item-button button button--biography"
+                    href="#"
+                    target="_blank"
+                  >
+                    Биография
+                  </a>
+                </div>
+                <div class="teachers__item">
+                  <img
+                    class="teachers__item-image"
+                    src="./img/src/teacher2.png"
+                    alt="teacher-image"
+                  />
+                  <h3 class="teachers__item-name">Дмитрий Иванов</h3>
+                  <p class="teachers__item-position">
+                    Специалист по видеокартам
+                  </p>
+                  <a
+                    class="teachers__item-button button button--biography"
+                    href="#"
+                    target="_blank"
+                  >
+                    Биография
+                  </a>
+                </div>
+                <div class="teachers__item">
+                  <img
+                    class="teachers__item-image"
+                    src="./img/src/teacher3.png"
+                    alt="teacher-image"
+                  />
+                  <h3 class="teachers__item-name">Дмитрий Иванов</h3>
+                  <p class="teachers__item-position">
+                    Специалист по видеокартам
+                  </p>
+                  <a
+                    class="teachers__item-button button button--biography"
+                    href="#"
+                    target="_blank"
+                  >
+                    Биография
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="partners">
+          <div class="partners__wrapper">
+            <div class="partners__body">
+              <div class="partners__header section-header">
+                <div class="section-header__logo section-logo">
+                  <img
+                    class="section-logo__image section-image"
+                    src="./img/src/EllipseBrands.png"
+                    alt="section-logo"
+                  />
+                </div>
+                <h2 class="section-header__name section-name">Наши партнеры</h2>
+              </div>
+              <div class="partners__items">
+                <div class="partners__item">
+                  <a class="partners__item-link" href="#" target="_blank"
+                    ><img
+                      class="partners__item-image"
+                      src="./img/src/msi_logo.png"
+                      alt="partner-logo"
+                  /></a>
+                </div>
+                <div class="partners__item">
+                  <a class="partners__item-link" href="#" target="_blank"
+                    ><img
+                      class="partners__item-image"
+                      src="./img/src/msi_logo.png"
+                      alt="partner-logo"
+                  /></a>
+                </div>
+                <div class="partners__item">
+                  <a class="partners__item-link" href="#" target="_blank"
+                    ><img
+                      class="partners__item-image"
+                      src="./img/src/msi_logo.png"
+                      alt="partner-logo"
+                  /></a>
+                </div>
+                <div class="partners__item">
+                  <a class="partners__item-link" href="#" target="_blank"
+                    ><img
+                      class="partners__item-image"
+                      src="./img/src/msi_logo.png"
+                      alt="partner-logo"
+                  /></a>
+                </div>
+                <div class="partners__item">
+                  <a class="partners__item-link" href="#" target="_blank"
+                    ><img
+                      class="partners__item-image"
+                      src="./img/src/msi_logo.png"
+                      alt="partner-logo"
+                  /></a>
+                </div>
+                <div class="partners__item">
+                  <a class="partners__item-link" href="#" target="_blank"
+                    ><img
+                      class="partners__item-image"
+                      src="./img/src/msi_logo.png"
+                      alt="partner-logo"
+                  /></a>
+                </div>
+                <div class="partners__item">
+                  <a class="partners__item-link" href="#" target="_blank"
+                    ><img
+                      class="partners__item-image"
+                      src="./img/src/msi_logo.png"
+                      alt="partner-logo"
+                  /></a>
+                </div>
+                <div class="partners__item">
+                  <a class="partners__item-link" href="#" target="_blank"
+                    ><img
+                      class="partners__item-image"
+                      src="./img/src/msi_logo.png"
+                      alt="partner-logo"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer" id="footer">
+      <div class="footer__wrapper">
+        <div class="footer__body">
+          <div class="footer__header-block">
+            <h2 class="footer__section-name section-name section-name--center">
+              Статьи каждую неделю
+            </h2>
+            <p
+              class="footer__section-description section-description section-description--center"
+            >
+              Больше 90% учеников прошли полный курс и смогли собрать свой
+              первый компьютер
+            </p>
+          </div>
+          <form class="footer__form" action="#">
+            <div class="footer__form-body">
+              <input
+                class="footer__form-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                maxlength="60"
+                required
+              />
+              <button class="footer__form-button button button--subscribe">
+                Подписаться
+              </button>
+            </div>
+          </form>
+          <div class="footer__social-items">
+            <a class="footer__social-item" href="#" target="_blank"
+              ><img class="footer__social-icon" src="./img/src/vk.png" alt="vk"
+            /></a>
+            <a class="footer__social-item" href="#" target="_blank"
+              ><img
+                class="footer__social-icon"
+                src="./img/src/youtube.png"
+                alt="youtube"
+            /></a>
+            <a class="footer__social-item" href="#" target="_blank"
+              ><img
+                class="footer__social-icon"
+                src="./img/src/facebook.png"
+                alt="facebook"
+            /></a>
+            <a class="footer__social-item" href="#" target="_blank"
+              ><img
+                class="footer__social-icon"
+                src="./img/src/instagram.png"
+                alt="instagram"
+            /></a>
+          </div>
+          <p class="footer__copy">© 2023 All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="top" title="Наверх">
+      <div class="triangle-top"></div>
+    </div>
+  </body>
+</html>
