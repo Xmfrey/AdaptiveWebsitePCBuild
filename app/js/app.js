@@ -1,4 +1,4 @@
-//////////////////////button-to-top////////////////////////////////
+////////////////////////////button-to-top////////////////////////////////
 
 const btnTop = document.querySelector(".top");
 
@@ -17,7 +17,7 @@ const backToTop = () => {
 
 btnTop.addEventListener("click", backToTop);
 
-//////////////////////nav-contacts////////////////////////////////
+////////////////////////////nav-contacts////////////////////////////////
 
 const lastItemLinkContacts =
   document.querySelector(".menu__list").lastElementChild.firstElementChild;
@@ -34,7 +34,7 @@ const openContacts = (e) => {
 
 lastItemLinkContacts.addEventListener("click", openContacts);
 
-//////////////////////close-contacts////////////////////////////////////
+//////////////////////////close-contacts////////////////////////////////////
 
 const closeContacts = (e) => {
   if (
@@ -48,7 +48,7 @@ const closeContacts = (e) => {
 
 document.addEventListener("click", closeContacts);
 
-//////////////////////fixed-nav-menu///////////////////////////////////
+//////////////////////////////fixed-nav-menu///////////////////////////////////
 
 const navbarfixed = () => {
   const nav = document.querySelector(".header__body");
@@ -60,7 +60,7 @@ const navbarfixed = () => {
 
 window.addEventListener("scroll", navbarfixed);
 
-////////percents of loading by earned money for cms//////////////
+//////////////percents of loading by earned money for cms//////////////////
 
 let firstnumber = parseInt(
   document
@@ -95,7 +95,7 @@ const clickBurg = (e) => {
 
 burger.addEventListener("click", clickBurg);
 
-///////////////////////close-menu/////////////////////////////
+////////////////////////////close-menu/////////////////////////////////
 
 const clickNav = (e) => {
   if (
@@ -295,3 +295,73 @@ function useDynamicAdapt(type = "max") {
 }
 
 useDynamicAdapt();
+
+////////////////////////////////timer///////////////////////////////////
+
+function getTimeRemaining(endtime) {
+  const t = Date.parse(endtime) - Date.parse(new Date());
+  const seconds = Math.floor((t / 1000) % 60);
+  const minutes = Math.floor((t / 1000 / 60) % 60);
+  const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  const days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    total: t,
+    days: days,
+    hours: hours,
+    minutes: minutes,
+    seconds: seconds,
+  };
+}
+
+const clock = document.querySelectorAll(".site-intro__time-item-body");
+const days = parseInt(
+  clock[0].querySelector(".site-intro__time-number").innerHTML.trim()
+);
+const hours = parseInt(
+  clock[1].querySelector(".site-intro__time-number").innerHTML.trim()
+);
+const minutes = parseInt(
+  clock[2].querySelector(".site-intro__time-number").innerHTML.trim()
+);
+const seconds = parseInt(
+  clock[3].querySelector(".site-intro__time-number").innerHTML.trim()
+);
+
+const mydays = days * 24 * 60 * 60 * 1000;
+const myhours = hours * 60 * 60 * 1000;
+const myminutes = minutes * 60 * 1000;
+const myseconds = seconds * 1000;
+
+function initializeClock(endtime) {
+  const clock = document.querySelectorAll(".site-intro__time-item-body");
+  const days = clock[0].querySelector(".site-intro__time-number");
+  const hours = clock[1].querySelector(".site-intro__time-number");
+  const minutes = clock[2].querySelector(".site-intro__time-number");
+  const seconds = clock[3].querySelector(".site-intro__time-number");
+
+  function updateClock() {
+    const t = getTimeRemaining(endtime);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+      var deadline = new Date(
+        Date.parse(new Date()) + mydays + myhours + myminutes + myseconds
+      );
+      initializeClock(deadline);
+    }
+
+    days.innerHTML = t.days;
+    hours.innerHTML = ("0" + t.hours).slice(-2);
+    minutes.innerHTML = ("0" + t.minutes).slice(-2);
+    seconds.innerHTML = ("0" + t.seconds).slice(-2);
+  }
+
+  updateClock();
+  const timeinterval = setInterval(updateClock, 1000);
+}
+
+const deadline = new Date(
+  Date.parse(new Date()) + mydays + myhours + myminutes + myseconds
+);
+
+initializeClock(deadline);

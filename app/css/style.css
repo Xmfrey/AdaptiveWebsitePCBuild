@@ -411,15 +411,16 @@ section {
   background-color: var(--background-line);
 }
 
-.site-intro__time-item-name {
-  font-size: 32px;
-  font-weight: var(--bold);
-}
-
-.site-intro__time-item-name span {
+.site-intro__time-name {
   font-size: 18px;
   opacity: var(--opacity);
-  font-weight: 400;
+  line-height: 140%;
+}
+
+.site-intro__time-number {
+  font-size: 32px;
+  font-weight: var(--bold);
+  line-height: 140%;
 }
 
 /* _____________________site-intro-statistics__________________ */
@@ -1052,11 +1053,11 @@ section {
     height: 90px;
   }
 
-  .site-intro__time-item-name {
+  .site-intro__time-number {
     font-size: 28px;
   }
 
-  .site-intro__time-item-name span {
+  .site-intro__time-name {
     font-size: 16px;
   }
 
@@ -1536,11 +1537,11 @@ section {
     height: 80px;
   }
 
-  .site-intro__time-item-name {
+  .site-intro__time-number {
     font-size: 26px;
   }
 
-  .site-intro__time-item-name span {
+  .site-intro__time-name {
     font-size: 14px;
   }
 
@@ -1657,6 +1658,7 @@ section {
     margin-right: 15px;
   }
 }
+
 /* ____________________________375px____________________________ */
 
 @media screen and (max-width: 375px) {
@@ -1777,7 +1779,7 @@ section {
 
 @media screen and (max-width: 280px) {
   .site-intro__header {
-    top: 10%;
+    top: 12%;
   }
 
   .menu__list {
