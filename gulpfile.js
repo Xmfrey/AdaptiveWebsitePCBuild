@@ -42,15 +42,24 @@ function styles() {
 }
 
 function images() {
-  return src("app/img/src/**/*")
-    .pipe(imagemin({ progressive: true }))
-    .pipe(dest("dist/img/src/"))
+  return src("app/images/src/**/*")
+    .pipe(
+      imagemin([
+        imagemin.gifsicle({ interlaced: true }),
+        imagemin.mozjpeg({ quality: 80, progressive: true }),
+        imagemin.optipng({ optimizationLevel: 5 }),
+        imagemin.svgo({
+          plugins: [{ removeViewBox: true }, { cleanupIDs: false }],
+        }),
+      ])
+    )
+    .pipe(dest("dist/images/src/"))
     .pipe(browserSync.stream());
 }
 
 function buildcopy() {
   return src(
-    ["app/fonts/*", "app/libs/**/*", "app/**/*.html", "app/img/favicon/*"],
+    ["app/fonts/*", "app/libs/**/*", "app/**/*.html", "app/images/favicon/*"],
     {
       base: "app",
     }
@@ -68,7 +77,7 @@ function startwatch() {
 
   watch("app/**/*.html").on("change", browserSync.reload);
 
-  watch("app/img/**/*", images);
+  watch("app/images/**/*", images);
 }
 
 exports.browsersync = browsersync;

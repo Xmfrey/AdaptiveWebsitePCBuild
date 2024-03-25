@@ -11,7 +11,6 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.29.3",
-    "gifsicle": "^5.2.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean": "^0.4.0",
@@ -20,7 +19,6 @@
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",
-    "gulp-uglify-es": "^3.0.0",
-    "pngquant-bin": "^6.0.1"
+    "gulp-uglify-es": "^3.0.0"
   }
 }

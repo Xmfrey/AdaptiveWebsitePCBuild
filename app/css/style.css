@@ -1199,6 +1199,18 @@ section {
     top: 15%;
   }
 
+  .custom-logo-link {
+    margin-left: 15px;
+  }
+
+  .header__right-side-button {
+    margin-right: 15px;
+  }
+
+  .menu__list {
+    margin: 0 20px;
+  }
+
   .about-us__body {
     row-gap: 40px;
   }
@@ -1223,10 +1235,6 @@ section {
   .teachers__wrapper {
     padding-bottom: 60px;
   }
-
-  .stat-body {
-    gap: 25px;
-  }
 }
 
 /* __________________________1160px___________________________ */
@@ -1244,95 +1252,13 @@ section {
     top: 39px;
   }
 }
-/* ____________________________992px____________________________ */
 
-@media screen and (max-width: 992px) {
-  body.lock {
-    overflow: hidden;
-  }
+/* __________________________1040px___________________________ */
 
-  .site-intro__title {
-    font-size: 46px;
-  }
-
-  .site-intro__title {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-  }
-
-  .site-intro__header {
-    padding: 0 15px;
-  }
-
-  .header__right-side {
-    display: flex;
-    align-items: center;
-    margin-right: 15px;
-  }
-
-  .header__right-side-button {
-    margin-right: 0;
-  }
-
-  .custom-logo-link {
-    margin-left: 15px;
-  }
-
-  .teachers__header {
-    margin-bottom: 40px;
-  }
-
-  .teachers__wrapper {
-    padding-bottom: 45px;
-  }
-
-  .profession__items {
-    row-gap: 20px;
-  }
-
-  .about-us__content-title {
-    font-size: 36px;
-  }
-
-  .section-name {
-    font-size: 36px;
-  }
-  .start__wrapper {
-    padding-top: 0;
-    padding-bottom: 60px;
-  }
-
-  .profession__wrapper {
-    padding-bottom: 40px;
-  }
-  .profession__section-name {
-    margin-bottom: 40px;
-  }
-  .program-study__wrapper {
-    padding-bottom: 60px;
-  }
-  .partners__header {
-    margin-bottom: 50px;
-  }
-  .partners__wrapper {
-    padding-bottom: 60px;
-  }
-}
-
-/* ____________________________768px____________________________ */
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1040px) {
   .button--login {
     display: block;
     border-radius: 0;
-  }
-
-  .site-intro__title {
-    font-size: 38px;
-  }
-
-  .salary__earned {
-    justify-content: space-between;
   }
 
   .header__right-side-burger {
@@ -1447,6 +1373,93 @@ section {
   }
   .menu__list-item:last-child .menu__list-item-link::before {
     right: 60px;
+  }
+
+  .header__right-side {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  .header__right-side-button {
+    margin-right: 0;
+  }
+}
+
+/* ____________________________992px____________________________ */
+
+@media screen and (max-width: 992px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .site-intro__title {
+    font-size: 46px;
+  }
+
+  .site-intro__title {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+  }
+
+  .site-intro__header {
+    padding: 0 15px;
+  }
+
+  .teachers__header {
+    margin-bottom: 40px;
+  }
+
+  .teachers__wrapper {
+    padding-bottom: 45px;
+  }
+
+  .profession__items {
+    row-gap: 20px;
+  }
+
+  .about-us__content-title {
+    font-size: 36px;
+  }
+
+  .section-name {
+    font-size: 36px;
+  }
+  .start__wrapper {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+
+  .profession__wrapper {
+    padding-bottom: 40px;
+  }
+  .profession__section-name {
+    margin-bottom: 40px;
+  }
+  .program-study__wrapper {
+    padding-bottom: 60px;
+  }
+  .partners__header {
+    margin-bottom: 50px;
+  }
+  .partners__wrapper {
+    padding-bottom: 60px;
+  }
+}
+
+/* ____________________________768px____________________________ */
+
+@media screen and (max-width: 768px) {
+  .site-intro__title {
+    font-size: 38px;
+  }
+
+  .salary__earned {
+    justify-content: space-between;
+  }
+
+  .stat-body {
+    gap: 25px;
   }
 
   .about-us__body {
