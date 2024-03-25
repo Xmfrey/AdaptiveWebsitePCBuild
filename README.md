@@ -1,4 +1,4 @@
-Open by https://xmfrey.github.io/AdaptiveWebsiteApertureStudios/.
+Open by https://xmfrey.github.io/AdaptiveWebsitePCBuild/.
 
 1. app - source files;
 2. dist - final build by Gulp (command 'gulp build' in PowerShell at the root of the project);
